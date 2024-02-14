@@ -1,24 +1,13 @@
-#include 'totvs.ch'
+#Include "TOTVS.ch"
 
-/*/{Protheus.doc} Soma
-@type user function
-@author Kauê Baptistella
-@since 07/02/2024
-@version 1
-@param a, primeiro número
-@param b, segundo número
-@return total, retorno da soma do primeiro + o segundo número digitado
-/*/
+User Function E1001() As Variant
+    Local cNum1  As Character
+    Local cNum2  As Character
+    Local nTotal As Numeric
 
-Function U_MS39
+    cNum1  := FwInputBox("Digite o primeiro número:", cNum1)
+    cNum2  := FwInputBox("Digite o segundo número:", cNum2)
+    nTotal := Val(cNum1) + Val(cNum2)
 
-    Local a as chacaracter
-    Local b as chacaracter
-    Local total as chacaracter
-
-    a := FwInputBox("Digite um número", a)
-    b := FwInputBox("Digite o segundo número", b)
-    total := Val(a) + Val(b)
-    FWAlertInfo("X" + " " + "=" + " " + AllTrim(Str(total)))
-  
-Return
+    FwAlertInfo("X = " + CValToChar(nTotal))
+Return (NIL)
