@@ -1,7 +1,5 @@
-#include 'totvs.ch'
+#Include "TOTVS.ch"
 
-Function U_HelloWorldx1
-
-    ConOut("Hello, World!")
-
-Return
+User Function E1000() As Variant
+	FwAlertInfo("Hello, World!")
+Return (NIL)
